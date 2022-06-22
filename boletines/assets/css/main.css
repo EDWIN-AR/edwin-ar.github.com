@@ -1,0 +1,139 @@
+html{
+   font-family: 'Nunito', sans-serif; 
+}
+
+a{
+    text-decoration: none;
+    color: #159957;
+    font-weight: 800;
+}
+
+a:hover{
+    opacity: 0.6;
+}
+a:visited{
+    background-color: crimson;
+}
+a:active{
+    background-color: darkorange;
+}
+.container{
+    background: #159957;  /* respaldo */
+    background: -webkit-linear-gradient(to right, #155799, #159957);  
+    background: linear-gradient(to right, #155799, #159957); 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.paragraph{
+    line-height: 1.8em;
+    font-weight: 200;
+}
+.content{
+    max-width: 960px;
+    max-height: 80vh;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow: scroll;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 4px;
+    position:relative;
+    padding: 1.8em;  
+}
+.content{
+    padding: 1em;
+}
+.td{
+    display: block;
+    width: 100px;
+}
+td:nth-last-of-type(1){
+    font-size:1.5em;
+    font-weight: bold;
+    color:#155799
+}
+th{
+    display: none;
+}
+
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td, table th{
+    padding: 1em;
+    text-align: left;
+}
+table tr:nth-child(even){ background-color: #d7ebff;}
+
+.fa-star {color: #ffc444;}
+
+.title-item{
+    border-bottom: solid 2px #155799;
+    padding-bottom: 1em;
+}
+.position{
+    background-color: #155799;
+    color: white;
+    padding: 0.5em;
+    border-radius: 16px;
+    margin-left: 0.5em;
+}
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close{
+    height: 40px;
+    width: 40px;
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.address{
+    font-weight: bold;
+    color: #155799;
+    margin-top: 1em;
+    display: inline-block;
+
+}
+.main-image{
+    float: left;
+    margin-right: 1em;
+}
+
+@media (min-width:900px){
+    th{
+        display: table-cell;
+    }
+    td{
+        width: auto;
+        display: table-cell;
+    }
+       .content{ 
+        padding: 1.8em;  
+       }
+    }
+
+@media (min-width:550px){
+    .content{
+      height: 500px;}
+}
